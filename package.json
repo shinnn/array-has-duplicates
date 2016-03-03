@@ -1,0 +1,44 @@
+{
+  "name": "array-has-duplicates",
+  "version": "1.0.0",
+  "description": "Check if an array includes duplicated values or not",
+  "repository": "shinnn/array-has-duplicates",
+  "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
+  "scripts": {
+    "bench": "node benchmark/index-of.js && node benchmark/set-array-from.js && node benchmark/set-for-of.js && node benchmark/main.js",
+    "pretest": "eslint --config @shinnn --ignore-path .gitignore .",
+    "test": "node --throw-deprecation --track-heap-objects test.js | tap-spec",
+    "coverage": "node node_modules/.bin/istanbul cover -x=bower_components/** test.js"
+  },
+  "license": "MIT",
+  "jsnext:main": "index.jsnext.js",
+  "files": [
+    "index.js",
+    "index.jsnext.js"
+  ],
+  "keywords": [
+    "arr",
+    "ary",
+    "array",
+    "dup",
+    "dups",
+    "duplicate",
+    "duplicates",
+    "duplicated",
+    "check",
+    "if",
+    "browser",
+    "client-side"
+  ],
+  "devDependencies": {
+    "@shinnn/eslint-config": "^2.0.1",
+    "chalk": "^1.1.1",
+    "eslint": "^2.2.0",
+    "filled-array": "^1.1.0",
+    "istanbul": "^0.4.2",
+    "require-from-string": "^1.1.0",
+    "rollup": "^0.25.4",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.5.0"
+  }
+}
