@@ -6,9 +6,9 @@
   "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
   "scripts": {
     "bench": "node benchmark/index-of.js && node benchmark/set-array-from.js && node benchmark/set-for-of.js && node benchmark/main.js",
-    "pretest": "eslint --fix --config @shinnn --ignore-path .gitignore .",
+    "pretest": "eslint --fix --format=codeframe --ignore-path .gitignore .",
     "test": "node --throw-deprecation --track-heap-objects test.js | tap-spec",
-    "coverage": "node node_modules/.bin/istanbul cover -x=bower_components/** test.js"
+    "coverage": "istanbul cover -x=bower_components/** test.js"
   },
   "license": "MIT",
   "jsnext:main": "index.jsnext.js",
@@ -31,14 +31,17 @@
     "client-side"
   ],
   "devDependencies": {
-    "@shinnn/eslint-config": "^3.0.0",
+    "@shinnn/eslint-config": "^3.3.6",
     "chalk": "^1.1.3",
-    "eslint": "^3.1.1",
+    "eslint": "^3.13.1",
     "filled-array": "^1.1.0",
-    "istanbul": "^0.4.4",
-    "require-from-string": "^1.2.0",
-    "rollup": "^0.34.1",
+    "istanbul": "^0.4.5",
+    "require-from-string": "^1.2.1",
+    "rollup": "^0.41.1",
     "tap-spec": "^4.1.1",
-    "tape": "^4.6.0"
+    "tape": "^4.6.3"
+  },
+  "eslintConfig": {
+    "extends": "@shinnn"
   }
 }
