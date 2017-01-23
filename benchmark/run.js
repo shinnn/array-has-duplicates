@@ -3,11 +3,10 @@
 const assert = require('assert');
 
 const chalk = require('chalk');
-const filledArray = require('filled-array');
 
-const duplicatedArray = filledArray('value', 300);
-const serialArray = filledArray(index => index, 300);
-const largeSerialArray = filledArray(index => index, 1000);
+const duplicatedArray = new Array(300).fill('value');
+const serialArray = Array.from({length: 300}, (v, k) => k);
+const largeSerialArray = Array.from({length: 1000}, (v, k) => k);
 
 module.exports = function runBench(fn, suiteName) {
   function loop(caseFn, fixtureName) {
