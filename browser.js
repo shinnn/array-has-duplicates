@@ -9,19 +9,19 @@
     return true;
   }
 
-  var hasES2015features = typeof Set === 'function' && typeof Array.from === 'function';
+  var hasSet = typeof Set === 'function';
 
   window.arrayHasDuplicates = function arrayHasDuplicates(arr) {
     if (!Array.isArray(arr)) {
       throw new TypeError(
-        String(arr) +
+        arr +
         ' is not an array. Expected an array to check if it includes duplicated values or not.'
       );
     }
 
     arr = arr.filter(removeEmptyArrayElement);
 
-    if (arr.length < 300 || !hasES2015features) {
+    if (arr.length < 300 || !hasSet) {
       var len = arr.length;
 
       while (len--) {
@@ -33,6 +33,6 @@
       return false;
     }
 
-    return arr.length !== 0 && arr.length !== Array.from(new Set(arr)).length;
+    return arr.length !== 0 && arr.length !== new Set(arr).size;
   };
 })();
