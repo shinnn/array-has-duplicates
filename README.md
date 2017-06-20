@@ -4,7 +4,6 @@
 [![Bower version](https://img.shields.io/bower/v/array-has-duplicates.svg)](https://github.com/shinnn/array-has-duplicates/releases)
 [![Build Status](https://travis-ci.org/shinnn/array-has-duplicates.svg?branch=master)](https://travis-ci.org/shinnn/array-has-duplicates)
 [![Coverage Status](https://img.shields.io/coveralls/shinnn/array-has-duplicates.svg)](https://coveralls.io/r/shinnn/array-has-duplicates)
-[![devDependency Status](https://david-dm.org/shinnn/array-has-duplicates/dev-status.svg)](https://david-dm.org/shinnn/array-has-duplicates#info=devDependencies)
 
 Check if an [array](http://www.ecma-international.org/ecma-262/5.1/#sec-15.4) includes duplicated values or not
 
@@ -15,18 +14,10 @@ arrayHasDuplicates([1, 2, 3, 4, 5, 1]); //=> true
 
 ## Installation
 
-### Package managers
-
-#### [npm](https://www.npmjs.com/)
+### [npm](https://www.npmjs.com/)
 
 ```
 npm install array-has-duplicates
-```
-
-#### [bower](http://bower.io/)
-
-```
-bower install array-has-duplicates
 ```
 
 ### Standalone
@@ -40,7 +31,7 @@ bower install array-has-duplicates
 *array*: `Array`  
 Return: `Boolean`
 
-It returns `true` if the array includes at least one pair of duplicated values, otherwise returns `false`. 
+It returns `true` if the array includes at least one pair of duplicated values, otherwise returns `false`.
 
 *"Duplicated"* means a value is [strictly equal (`===`)][strictequal] to the other value.
 
@@ -57,7 +48,7 @@ arrayHasDuplicates([, , , undefined]); //=> false
 
 ## License
 
-Copyright (c) 2016 [Shinnosuke Watanabe](https://github.com/shinnn)
+Copyright (c) 2016 - 2017 [Shinnosuke Watanabe](https://github.com/shinnn)
 
 Licensed under [the MIT License](./LICENSE).
 
