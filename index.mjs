@@ -1,5 +1,3 @@
-'use strict';
-
 /*!
  * array-has-duplicates | MIT (c) Shinnosuke Watanabe
  * https://github.com/shinnn/array-has-duplicates
@@ -10,7 +8,7 @@ function removeEmptyArrayElement() {
 
 var hasSet = typeof Set === 'function';
 
-function arrayHasDuplicates(arr) {
+export default function arrayHasDuplicates(arr) {
 	if (!Array.isArray(arr)) {
 		throw new TypeError(arr +
       ' is not an array. Expected an array to check if it includes duplicated values or not.');
@@ -32,5 +30,3 @@ function arrayHasDuplicates(arr) {
 
 	return arr.length !== 0 && arr.length !== new Set(arr).size;
 }
-
-module.exports = arrayHasDuplicates;

@@ -1,21 +1,21 @@
 'use strict';
 
 function returnTrue() {
-  return true;
+	return true;
 }
 
 function fn(arr) {
-  arr = arr.filter(returnTrue);
+	arr = arr.filter(returnTrue);
 
-  var len = arr.length;
+	let len = arr.length;
 
-  while (len--) {
-    if (arr.indexOf(arr[len]) !== len) {
-      return true;
-    }
-  }
+	while (len--) {
+		if (arr.indexOf(arr[len]) !== len) {
+			return true;
+		}
+	}
 
-  return false;
+	return false;
 }
 
 require('./run')(fn, 'indexOf()');
