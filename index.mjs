@@ -2,6 +2,8 @@
  * array-has-duplicates | MIT (c) Shinnosuke Watanabe
  * https://github.com/shinnn/array-has-duplicates
 */
+import appendType from 'append-type';
+
 function removeEmptyArrayElement() {
 	return true;
 }
@@ -10,8 +12,7 @@ var hasSet = typeof Set === 'function';
 
 export default function arrayHasDuplicates(arr) {
 	if (!Array.isArray(arr)) {
-		throw new TypeError(arr +
-      ' is not an array. Expected an array to check if it includes duplicated values or not.');
+		throw new TypeError('Expected an Array to check if it includes duplicated values, but got ' + appendType(arr) + '.');
 	}
 
 	arr = arr.filter(removeEmptyArrayElement);

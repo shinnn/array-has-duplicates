@@ -35,14 +35,14 @@ test('arrayHasDuplicates()', t => {
 	);
 
 	t.throws(
-		() => arrayHasDuplicates(new Set([0, 1, 2])),
-		/^TypeError.*is not an array\. Expected an array to check if it includes duplicated values or not\./u,
+		() => arrayHasDuplicates(true),
+		/^TypeError.*Expected an Array to check if it includes duplicated values, but got true \(boolean\)\./u,
 		'should throw a type error when the first argument is not an array.'
 	);
 
 	t.throws(
 		() => arrayHasDuplicates(),
-		/^TypeError.*undefined is not an array\. /u,
+		/^TypeError.*Expected an Array to check if it includes duplicated values, but got undefined\./u,
 		'should throw a type error when it takes no arguments.'
 	);
 

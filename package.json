@@ -26,6 +26,9 @@
 		"check",
 		"if"
 	],
+	"dependencies": {
+		"append-type": "^1.0.1"
+	},
 	"devDependencies": {
 		"@shinnn/eslint-config": "^6.6.1",
 		"chalk": "^2.4.1",
