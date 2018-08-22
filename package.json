@@ -1,6 +1,6 @@
 {
 	"name": "array-has-duplicates",
-	"version": "2.0.0-0",
+	"version": "2.0.0-1",
 	"description": "Check if an array includes duplicated values or not",
 	"repository": "shinnn/array-has-duplicates",
 	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
@@ -30,7 +30,7 @@
 		"append-type": "^1.0.1"
 	},
 	"devDependencies": {
-		"@shinnn/eslint-config": "^6.6.1",
+		"@shinnn/eslint-config": "^6.6.2",
 		"chalk": "^2.4.1",
 		"eslint": "^5.4.0",
 		"nyc": "^13.0.1",
