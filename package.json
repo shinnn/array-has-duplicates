@@ -6,7 +6,6 @@
 	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
 	"license": "MIT",
 	"scripts": {
-		"bench": "node -p \"require('chalk').yellow('NOTE: Smaller is better.\\n')\" && node benchmark/index-of.js && node benchmark/set.js && node benchmark/main.js",
 		"prebuild": "eslint .",
 		"build": "rollup --config=node:module",
 		"pretest": "npm run-script build",
@@ -23,6 +22,8 @@
 		"duplicate",
 		"duplicates",
 		"duplicated",
+		"same",
+		"same-value-equality",
 		"check",
 		"if"
 	],

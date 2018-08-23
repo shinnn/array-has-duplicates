@@ -23,6 +23,12 @@ test('arrayHasDuplicates()', t => {
 	);
 
 	t.equal(
+		arrayHasDuplicates([0, -0]),
+		false,
+		'should differentiate negative zero from positive zero.'
+	);
+
+	t.equal(
 		arrayHasDuplicates([, , , undefined]), // eslint-disable-line no-sparse-arrays
 		false,
 		'should ignore empty array elements.'
