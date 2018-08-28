@@ -4,16 +4,8 @@
 */
 import appendType from 'append-type';
 
-var objectIs = Object.is || function objectIs(x, y) {
-	if (x === y) {
-		return x !== 0 || 1 / x === 1 / y;
-	}
-
-	return x !== x && y !== y; // eslint-disable-line no-self-compare
-};
-
 function is(x) {
-	return objectIs(this, x);
+	return Object.is(this, x);
 }
 
 function isAlradyFound(val) {
