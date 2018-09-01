@@ -3,7 +3,7 @@
 var appendType = require('append-type');
 
 /*!
- * array-has-duplicates | MIT (c) Shinnosuke Watanabe
+ * array-has-duplicates | ISC (c) Shinnosuke Watanabe
  * https://github.com/shinnn/array-has-duplicates
 */
 
