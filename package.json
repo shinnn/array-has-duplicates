@@ -1,6 +1,6 @@
 {
 	"name": "array-has-duplicates",
-	"version": "2.0.0-3",
+	"version": "2.0.0-4",
 	"description": "Check if an array includes duplicated values or not",
 	"repository": "shinnn/array-has-duplicates",
 	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
