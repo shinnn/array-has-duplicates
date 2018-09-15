@@ -21,7 +21,7 @@ function isAlradyFound(val) {
 	return false;
 }
 
-function arrayHasDuplicates(arr) {
+module.exports = function arrayHasDuplicates(arr) {
 	if (!Array.isArray(arr)) {
 		throw new TypeError('Expected an Array to check if it includes duplicated values, but got ' + appendType(arr) + '.');
 	}
@@ -30,5 +30,3 @@ function arrayHasDuplicates(arr) {
 
 	return arr.some(isAlradyFound, foundValues);
 }
-
-module.exports = arrayHasDuplicates;
