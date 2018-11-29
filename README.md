@@ -1,7 +1,7 @@
 # array-has-duplicates
 
 [![npm version](https://img.shields.io/npm/v/array-has-duplicates.svg)](https://www.npmjs.com/package/array-has-duplicates)
-[![Build Status](https://travis-ci.org/shinnn/array-has-duplicates.svg?branch=master)](https://travis-ci.org/shinnn/array-has-duplicates)
+[![Build Status](https://travis-ci.com/shinnn/array-has-duplicates.svg?branch=master)](https://travis-ci.com/shinnn/array-has-duplicates)
 [![Coverage Status](https://img.shields.io/coveralls/shinnn/array-has-duplicates.svg)](https://coveralls.io/github/shinnn/array-has-duplicates)
 
 Check if an `Array` includes duplicated values or not
@@ -13,7 +13,7 @@ arrayHasDuplicates([1, 2, 3, 4, 5, 1]); //=> true
 
 ## Installation
 
-[Use](https://docs.npmjs.com/cli/install) [npm](https://docs.npmjs.com/getting-started/what-is-npm).
+[Use](https://docs.npmjs.com/cli/install) [npm](https://docs.npmjs.com/about-npm/).
 
 ```
 npm install array-has-duplicates
@@ -46,7 +46,7 @@ arrayHasDuplicates([, undefined]);
 //=> false, though array[0] and array[1] are both `undefined`
 ```
 
-### Tips
+## Tips
 
 When the difference between `-0` and `+0` is not important, there is no need to use this module and the [`Set`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) constructor serves the purpose.
 
